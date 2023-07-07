@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { HeroCard } from "./";
 import { getHeroesByPublisher } from "../helpers";
 
 
@@ -10,16 +11,17 @@ export const HeroList = ({ publisher }) => {
     const heroes = getHeroesByPublisher( publisher );
 
     return (
-        <ul>
+        <div className="row rows-cols-1 row-cols-md-3 g-3">
             {
                 // Here the <li> items get the value of 'heroe.superhero' from my heroes in line 10 (previously filtered)
-                heroes.map( heroe => (
-                    <li key={heroe.id}>
-                        {heroe.superhero}
-                    </li>
+                heroes.map( hero => (
+                    <HeroCard 
+                        key={hero.id}
+                        {...hero}
+                    />
                 ))
             }
-        </ul>
+        </div>
     )
 }
 
