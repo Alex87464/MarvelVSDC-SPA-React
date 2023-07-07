@@ -1,7 +1,14 @@
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 
 export const Navbar = () => {
+
+    const navigate = useNavigate();
+
+    const handleLogout = () => {
+        navigate('/login', {replace:true});
+    }
+
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">
             
@@ -29,20 +36,6 @@ export const Navbar = () => {
                         DC
                     </NavLink>
 
-                    <NavLink 
-                        className={ ({isActive}) => `nav-item nav-link ${isActive ? 'active' : '' }` }
-                        to="/hero"
-                    >
-                        HERO
-                    </NavLink>
-                    
-                    <NavLink 
-                        className={ ({isActive}) => `nav-item nav-link ${isActive ? 'active' : '' }` }
-                        to="/search"
-                    >
-                        SEARCH
-                    </NavLink>
-
                 </div>
             </div>
 
@@ -53,7 +46,10 @@ export const Navbar = () => {
                         Alex
                     </span>
 
-                    <button className='nav-item nav-link btn'>
+                    <button 
+                        className='nav-item nav-link btn'
+                        onClick={handleLogout}
+                    >
                         Logout
                     </button>
                 </ul>
