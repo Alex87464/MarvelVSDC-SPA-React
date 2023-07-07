@@ -6,8 +6,9 @@ export const MarvelPage = () => {
     <>
       <h1>DC Comics</h1>
       <hr/>
-
-    <HeroList publisher={'Marvel Comics'} />
+      
+      {/* Here I call the component '<HeroList/> and give it the publisher parameter `publisher={'Marvel Comics'}`*/}
+      <HeroList publisher={'Marvel Comics'} />
 
     </>
   )
