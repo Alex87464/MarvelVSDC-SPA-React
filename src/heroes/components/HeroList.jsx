@@ -9,7 +9,7 @@ import { getHeroesByPublisher } from "../helpers";
 export const HeroList = ({ publisher }) => {
     // This `heroes` take the value of a heroes list filtered by the function getHeroes... and it takes the 
     // `publisher` parameter received by this component (also this component receives the value from the DcPage/MarvelPage component)
-    const heroes = useMemo(() => getHeroesByPublisher( publisher ), [ publisher ]);
+    const heroes = useMemo(() => getHeroesByPublisher(publisher), [publisher]);
 
     return (
         <div className="row rows-cols-1 row-cols-md-3 g-3">
