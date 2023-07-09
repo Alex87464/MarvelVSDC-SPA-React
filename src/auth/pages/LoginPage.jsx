@@ -11,12 +11,13 @@ export const LoginPage = () => {
   const { login } = useContext( AuthContext );
   const handleLogin = () => {
 
+    const lastPath = localStorage.getItem('lastPath') || '/';
+    
     login( 'Alex Oliva' );
 
-
-    navigate('/', {
-      replace:true}
-    );
+    navigate(lastPath, {
+      replace:true
+    });
   }
 
   return (
