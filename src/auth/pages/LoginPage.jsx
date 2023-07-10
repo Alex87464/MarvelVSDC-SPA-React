@@ -22,20 +22,21 @@ export const LoginPage = () => {
         <h2>Login</h2>
         <form>
           <div className="user-box">
-            <input type="text" name="" required="" />
+            <input
+              type="text"
+              name="username"
+              required={false}
+              autoComplete="off"
+            />
             <label>Username</label>
           </div>
-          <div className="user-box">
-            <input type="password" name="" required="" />
-            <label>Password</label>
-          </div>
-          <a href="#" onClick={handleLogin}>
+          <button className="login-button" href="#" onClick={handleLogin}>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             Login
-          </a>
+          </button>
         </form>
       </div>
     </div>
