@@ -29,12 +29,12 @@ export const LoginPage = () => {
             <input type="password" name="" required="" />
             <label>Password</label>
           </div>
-          <a href="#">
+          <a href="#" onClick={handleLogin}>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            Submit
+            Login
           </a>
         </form>
       </div>
