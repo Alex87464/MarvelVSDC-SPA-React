@@ -20,7 +20,7 @@ export const LoginPage = () => {
 
     const lastPath = localStorage.getItem('lastPath') || '/';
 
-    login('Persona');
+    login(username);
 
     navigate(lastPath, {
       replace: true,
