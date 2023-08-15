@@ -6,7 +6,10 @@ body {
   padding:0;
   /* font-family: sans-serif; */
   /* background: linear-gradient(#301414, #552424); */
-  color: #000;
+  color: #fff;
+  background-image: url('../assets/marvel_vs_dc.webp');
+  background-size: cover;
+  background-position: center;
 }
 
 
