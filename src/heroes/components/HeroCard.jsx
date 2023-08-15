@@ -52,7 +52,7 @@ export const HeroCard = ({
                         </p>
 
                         <Link to={`/hero/${id}`}>
-                        Mas info..
+                        More info
                         </Link>
 
 
