@@ -1,7 +1,5 @@
 # Marvel/DC Super Heroes Searcher
 
-![Captura de Pantalla del Proyecto](ruta/a/tu/captura-de-pantalla.png)
-
 Explora y descubre información detallada sobre tus superhéroes favoritos de los universos de Marvel y DC Comics con "Marvel/DC Super Heroes Searcher". Esta aplicación web, construida con React, te permite buscar por nombre, explorar alter egos, encontrar la fecha de su primera aparición en cómics y conocer la editorial a la que pertenecen. Una experiencia perfecta para los entusiastas de los cómics y los superhéroes.
 
 ## Características
